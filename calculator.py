@@ -12,3 +12,4 @@ def main(inp):
     operator = string_to_list[1]
     return a, b, operator
 
+x, y, operator = main(inp)
