@@ -4,7 +4,6 @@
 # Authors: Калинина, Козлова, Субракова, Финк
 inp = input()
 
-
 def main(inp):
     string_to_list = inp.split(" ")
     a = float(string_to_list[0])
@@ -13,3 +12,10 @@ def main(inp):
     return a, b, operator
 
 x, y, operator = main(inp)
+
+def add(x, y):
+       return x + y
+
+if operator == '+':
+    print(add(x,y))
+
