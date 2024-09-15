@@ -7,7 +7,7 @@ inp = input("Введите выражение, используя пробел�
 
 def main(inp):
 
-    string_to_list = inp.split(" ")
+    string_to_list = inp.split( )
     a = float(string_to_list[0])
     b = float(string_to_list[2])
     operator = string_to_list[1]
