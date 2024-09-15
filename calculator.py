@@ -29,6 +29,7 @@ if operator == '+':
     result = add(x,y)
 elif operator == '*':
     result = multiply(x*y)
-elif operator == '/'
+elif operator == '/':
     result == divide(x, y)
- print(f"Результат: {result}")
+
+print(f"Результат: {result}")
