@@ -7,3 +7,6 @@ expression_split = expression.split()
 num1 = float(expression_split[0])  # первое число выражения
 operator = expression_split[1]  # оператор выражения
 num2 = float(expression_split[2])  # второе число выражения
+if operator == "-":  # условие
+    result = num1 - num2  
+    print(result)
