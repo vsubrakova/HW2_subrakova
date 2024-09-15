@@ -2,6 +2,8 @@
 # Input - user enters numbers and operation sign
 # Output - calculated number
 # Authors: Калинина, Козлова, Субракова, Финк
+
+
 inp = input()
 
 def main(inp):
@@ -18,4 +20,5 @@ def add(x, y):
 
 if operator == '+':
     print(add(x,y))
+
 
