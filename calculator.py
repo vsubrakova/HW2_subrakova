@@ -7,7 +7,7 @@ inp = input()
 
 def main(inp):
 
-    string_to_list = inp.split("введите выражение, используя пробелы до и после оператора, дробные числа должны быть разделены .")
+    string_to_list = inp.split( "введите выражение, используя пробелы до и после оператора, дробные числа должны быть разделены .")
     a = float(string_to_list[0])
     b = float(string_to_list[2])
     operator = string_to_list[1]
@@ -24,7 +24,7 @@ def divide(x, y):
     if y == 0:
         return "Ошибка! Деление на ноль."
     else: return x / y  
- def minus(x,y):
+def minus(x,y):
        return x-y 
   
 if operator == '+':
