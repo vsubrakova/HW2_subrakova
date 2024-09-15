@@ -21,13 +21,16 @@ def add(x, y):
        return x + y
 def multiply(x,y):
        return x*y
+def minus(x,y):
+       return x-y
 
 if operator == '+':
     result = add(x,y)
 elif operator == '*':
     result = multiply(x*y)
-
- print(f"Результат: {result}")
+elif operator == '-':
+    result = minus(x-y)
+print(f"Результат: {result}")
     
 
 
