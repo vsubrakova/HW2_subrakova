@@ -3,23 +3,32 @@
 # Output - calculated number
 # Authors: Калинина, Козлова, Субракова, Финк
 
-def divide(a, b):
-    if b == 0:
+inp = input()
+
+def main(inp):
+
+    string_to_list = inp.split("введите выражение, используя пробелы до и после оператора, дробные числа должны быть разделены .")
+    a = float(string_to_list[0])
+    b = float(string_to_list[2])
+    operator = string_to_list[1]
+    return a, b, operator
+
+
+x, y, operator = main(inp)
+
+def add(x, y):
+       return x + y
+def multiply(x,y):
+       return x*y
+def divide(x, y):
+    if y == 0:
         return "Ошибка! Деление на ноль."
-    return a / b
+    return x / y
 
-def main():
-    expression = input("Введите выражение: ")
-    num1, operator, num2 = expression.split()
-
-    num1 = float(num1)
-    num2 = float(num2)
-
-    if operator == '/':
-        result = divide(num1, num2)
-
-    print(result)
-
-if __name__ == "__main__":
-    main()
-
+if operator == '+':
+    result = add(x,y)
+elif operator == '*':
+    result = multiply(x*y)
+elif operator == '/'
+    result == divide(x, y)
+ print(f"Результат: {result}")
