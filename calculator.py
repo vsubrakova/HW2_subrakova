@@ -23,13 +23,17 @@ def multiply(x,y):
 def divide(x, y):
     if y == 0:
         return "Ошибка! Деление на ноль."
-    return x / y
-
+    else: return x / y  
+ def minus(x,y):
+       return x-y 
+  
 if operator == '+':
     result = add(x,y)
 elif operator == '*':
     result = multiply(x*y)
 elif operator == '/':
     result == divide(x, y)
-
+elif operator == '-':
+    result = minus(x-y)
 print(f"Результат: {result}")
+
