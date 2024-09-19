@@ -4,37 +4,37 @@
 # Authors: Калинина, Козлова, Субракова, Финк
 
 
+inp = input()
 
-def add(x, y):
-       return x + y
-def multiply(x,y):
-       return x*y
-def minus(x,y):
-       return x-y
+def main(inp):
 
-
-
-def main():
-    
-    inp = input("Введите выражение, используя пробелы до и после оператора, дробные числа должны быть разделены .")
-    string_to_list = inp.split( )
+    string_to_list = inp.split("введите выражение, используя пробелы до и после оператора, дробные числа должны быть разделены .")
     a = float(string_to_list[0])
     b = float(string_to_list[2])
     operator = string_to_list[1]
+    return a, b, operator
 
 
+x, y, operator = main(inp)
+
+def add(x, y):
+    return x + y
+def multiply(x, y):
+    return x * y
+def divide(x, y):
+    while y == 0:
+        print("Ошибка! Деление на ноль. Пожалуйста введите не нулевое значение для y")
+        y = float(input("Введите значение для y: "))
+    return x / y
+ def minus(x, y):
+    return x - y 
+  
 if operator == '+':
-    result = add(x,y)
+    result = add(x, y)
 elif operator == '*':
-    result = multiply(x*y)
+    result = multiply(x, y)
+elif operator == '/':
+    result == divide(x, y)
 elif operator == '-':
-    result = minus(x-y)
-    
-
-
-return result
-print(main())
-    
-
-
-
+    result = minus(x, y)
+print(f"Результат: {result}")
