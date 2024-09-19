@@ -3,12 +3,11 @@
 # Output - calculated number
 # Authors: Калинина, Козлова, Субракова, Финк
 
-
-inp = input()
+inp = input("введите выражение, используя пробелы до и после оператора, дробные числа должны быть разделены .")
 
 def main(inp):
 
-    string_to_list = inp.split("введите выражение, используя пробелы до и после оператора, дробные числа должны быть разделены .")
+    string_to_list = inp.split( )
     a = float(string_to_list[0])
     b = float(string_to_list[2])
     operator = string_to_list[1]
@@ -22,9 +21,6 @@ def add(x, y):
 def multiply(x, y):
     return x * y
 def divide(x, y):
-    while y == 0:
-        print("Ошибка! Деление на ноль. Пожалуйста введите не нулевое значение для y")
-        y = float(input("Введите значение для y: "))
     return x / y
 def minus(x, y):
     return x - y 
@@ -37,7 +33,4 @@ elif operator == '/':
     result = divide(x, y)
 elif operator == '-':
     result = minus(x, y)
-else:
-    result = "Ошибка! Неподдерживаемый оператор."
-    
 print(f"Результат: {result}")
