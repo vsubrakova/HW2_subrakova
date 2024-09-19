@@ -23,8 +23,8 @@ def multiply(x, y):
 def divide(x, y):
     while y == 0:
         print("Ошибка! Деление на ноль. Пожалуйста введите не нулевое значение для y")
-        b = float(input("Введите значение для y: "))
-    return a / b
+        y = float(input("Введите значение для y: "))
+    return x / y
  def minus(x, y):
        return x - y 
   
