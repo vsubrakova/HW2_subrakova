@@ -26,7 +26,7 @@ def divide(x, y):
         print("Ошибка! Деление на ноль. Пожалуйста введите не нулевое значение для y")
         y = float(input("Введите значение для y: "))
     return x / y
- def minus(x, y):
+def minus(x, y):
     return x - y 
   
 if operator == '+':
@@ -34,7 +34,10 @@ if operator == '+':
 elif operator == '*':
     result = multiply(x, y)
 elif operator == '/':
-    result == divide(x, y)
+    result = divide(x, y)
 elif operator == '-':
     result = minus(x, y)
+else:
+    result = "Ошибка! Неподдерживаемый оператор."
+    
 print(f"Результат: {result}")
