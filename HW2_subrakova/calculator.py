@@ -3,6 +3,7 @@
 # Output - calculated number
 # Authors: Калинина, Козлова, Субракова, Финк
 
+
 inp = input()
 
 def main(inp):
@@ -17,16 +18,16 @@ def main(inp):
 x, y, operator = main(inp)
 
 def add(x, y):
-       return x + y
+    return x + y
 def multiply(x, y):
-       return x * y
+    return x * y
 def divide(x, y):
     while y == 0:
         print("Ошибка! Деление на ноль. Пожалуйста введите не нулевое значение для y")
         y = float(input("Введите значение для y: "))
     return x / y
  def minus(x, y):
-       return x - y 
+    return x - y 
   
 if operator == '+':
     result = add(x, y)
@@ -37,4 +38,3 @@ elif operator == '/':
 elif operator == '-':
     result = minus(x, y)
 print(f"Результат: {result}")
-
